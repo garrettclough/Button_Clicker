@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Clicker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Flex Navigation Bar -->
+    <div class="navbar">
+        <span class="title">
+            <h1>Dojonary</h1>
+        </span>
+            <input class="search" type="search" placeholder="Seach">
+        <span class="login">
+            <button id ="btn" type="button" onclick="login('#btntext')"><span id="btntext">Login</span></button>
+        </span>
+    </div>
+    <div class="container">
+    <!-- Column 1 | Dictionary Definitions -->
+        <div class="column1">
+            <!-- Dictionary Word Entry -->
+            <div class="word">
+                <div class="word-entry">
+                    <p id="ninja">ninja</p>
+                    <p id="tense">noun</p>
+                    <p id="plural">Plural: <em>ninjas</em></p>
+                    <button id="like1" onclick="likeButton('#likecount1');alert('ninja was liked')"><span id="likecount1">13</span> likes</button>
+                </div>
+                <span class="definition">
+                    <p>A practioner skilled in the <a href="">Japanese</a> art of <a href="">ninjutsu</a></p>
+                </span>
+            </div>
+            <div class="word">
+                <div class="word-entry">
+                    <p id="ninja">ninja</p>
+                    <p id="tense">noun</p>
+                    <p id="plural">Plural: <em>ninjas</em></p>
+                    <button id="like2" onclick="likeButton('#likecount2');alert('ninja was liked')"><span id="likecount2">37</span> likes</button>
+                </div>
+                <span class="definition">
+                    <p>A <a href="">programmer</a> who breaks down problems with <a href="">zen</a>-like focus</p>
+                </span>
+            </div>
+        </div>
+    <!-- Column 2 | Add Definition Panel -->
+        <div class="column2">
+            <div class="add-definition">
+                <p>Dojanary is defined by YOU</p>
+                <div class="center">
+                    <button id="add" onclick="remove(this)">Add Definition</button></div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
