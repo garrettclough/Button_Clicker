@@ -10,9 +10,9 @@
 <body>
     <!-- Flex Navigation Bar -->
     <div class="navbar">
-        <span class="title">
+        <div class="title">
             <h1>Dojonary</h1>
-        </span>
+        </div>
             <input class="search" type="search" placeholder="Seach">
         <span class="login">
             <button id ="btn" type="button" onclick="login('#btntext')"><span id="btntext">Login</span></button>
@@ -24,25 +24,25 @@
             <!-- Dictionary Word Entry -->
             <div class="word">
                 <div class="word-entry">
-                    <p id="ninja">ninja</p>
-                    <p id="tense">noun</p>
-                    <p id="plural">Plural: <em>ninjas</em></p>
+                    <p class="ninja">ninja</p>
+                    <p class="tense">noun</p>
+                    <p class="plural">Plural: <em>ninjas</em></p>
                     <button id="like1" onclick="likeButton('#likecount1');alert('ninja was liked')"><span id="likecount1">13</span> likes</button>
                 </div>
-                <span class="definition">
+                <div class="definition">
                     <p>A practioner skilled in the <a href="">Japanese</a> art of <a href="">ninjutsu</a></p>
-                </span>
+                </div>
             </div>
             <div class="word">
                 <div class="word-entry">
-                    <p id="ninja">ninja</p>
-                    <p id="tense">noun</p>
-                    <p id="plural">Plural: <em>ninjas</em></p>
+                    <p class="ninja">ninja</p>
+                    <p class="tense">noun</p>
+                    <p class="plural">Plural: <em>ninjas</em></p>
                     <button id="like2" onclick="likeButton('#likecount2');alert('ninja was liked')"><span id="likecount2">37</span> likes</button>
                 </div>
-                <span class="definition">
+                <div class="definition">
                     <p>A <a href="">programmer</a> who breaks down problems with <a href="">zen</a>-like focus</p>
-                </span>
+                </div>
             </div>
         </div>
     <!-- Column 2 | Add Definition Panel -->
@@ -53,7 +53,6 @@
                     <button id="add" onclick="remove(this)">Add Definition</button></div>
             </div>
         </div>
-    </div>
     </div>
     <script src="script.js"></script>
 </body>
